@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vuelamp</title>
+</head>
+
+<body>
+    <img src="images/lamp.png" class="lmp">
+    <img src="images/light.png" id="light" class="light" alt="">
+    <nav>
+        <div class="imgs">
+
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo.png" class="logo-img">
+        </div>
+        <div class="right-nav">
+
+            <ul>
+                <li>
+                    <a href="#">Latest</a>
+                </li>
+                <li>
+                    <a href="#">Modern</a>
+                </li>
+                <li>
+                    <a href="#">Contemporary</a>
+                </li>
+                <li>
+                    <a href="#">Affordable</a>
+                </li>
+            </ul>
+            <!-- Rounded switch -->
+            <button type="button" id="btn" onclick="togglebtn()"><span></span></button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h1>Latest</h1>
+            <br>
+            <h1>in Lighting</h1>
+            <br>
+            <p>This is the first lamp from our company. we're making a huge collection of</p>
+            <p>lamps in all categories from home use to office use.</p>
+            <br><button>Check all Collection</button>
+        </div>
+    </main>
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function togglebtn() {
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+            /* in content box if width of any border or padding is added than that will make element wider*/
+            /* border box respects the width and height */
+        }
+        
+        h1 {
+            font-size: 100px;
+        }
+        
+        .lmp {
+            position: absolute;
+            margin-left: 28em;
+        }
+        
+        .light {
+            position: absolute;
+            top: 36em;
+            left: 6em;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        
+        body {
+            background-color: #1d2026;
+            width: 100%;
+            min-height: 100vh;
+            color: #fff;
+        }
+        
+        nav {
+            /* background-color: orange; */
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            /* puts logo div and right nav div to the side  */
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .imgs {
+            margin-left: 6em;
+            width: 50%;
+            box-sizing: border-box;
+            /* padding: 10em; */
+        }
+        
+        .menu-img,
+        .logo-img {
+            margin-left: 2em;
+        }
+        
+        .menu-img,
+        .logo-img:hover {
+            cursor: pointer;
+        }
+        
+        .right-nav {
+            width: 40%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        ul {
+            list-style: none;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 40px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            transition: all 0.5s;
+        }
+        
+        a:hover {
+            color: gray;
+            transform: translateY(-0.15em);
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin-left: 30em;
+        }
+        
+        p {
+            margin-bottom: 0.5em;
+        }
+        
+        .content button {
+            margin-left: 4em;
+            font-size: 16px;
+            display: inline-block;
+            width: 40%;
+            height: 5vh;
+            color: white;
+            background-color: green;
+            border-radius: 25px;
+            border: 1px solid green;
+            transition: color 0.3s;
+        }
+        
+        .content button:hover {
+            color: black;
+            cursor: pointer;
+        }
+        
+        .right-nav button {
+            background-color: #efefef;
+            height: 30px;
+            width: 60px;
+            border-radius: 20px;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        
+        .right-nav button span {
+            display: block;
+            background-color: #999;
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            margin-left: 2px;
+            transition: all 0.5s;
+        }
+        
+        .active {
+            background-color: green !important;
+        }
+        
+        .active span {
+            background-color: white;
+            margin-left: 31px !important;
+        }
+        
+        .on {
+            opacity: 1;
+        }
